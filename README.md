@@ -508,10 +508,9 @@ If you use this work in your research, please cite:
 MSc Data Analytics, Queen Mary University of London  
 Student ID: 241040522
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Website: [Your Portfolio](https://yourwebsite.com)
+- Email: [sushmita.s.0721@gmail.com](mailto:sushmita.s.0721@gmail.com)
+- GitHub: [@Sushmitha0721](https://github.com/Sushmitha2701/)
+- LinkedIn: [sushmita-singh-21s7](https://www.linkedin.com/in/sushmita-singh-21s7/)
 
 For research inquiries or collaboration opportunities, please reach out via email.
 
