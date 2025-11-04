@@ -51,7 +51,7 @@ This research makes **four critical contributions** to wildlife re-identificatio
 | *Random Baseline* | - | *0.33%* | *1.67%* | *3.34%* | *6.69%* | *0.005* | - |
 
 <details>
-<summary>📈 View Performance Visualizations</summary>
+<summary> View Performance Visualizations</summary>
 
 <div align="center">
   <img src="results/figures/cmc_curves_comparison.png" alt="CMC Curves" width="600"/>
@@ -115,7 +115,7 @@ splits = create_temporal_splits(
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
