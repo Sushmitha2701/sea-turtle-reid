@@ -16,22 +16,22 @@
 
 This research makes **four critical contributions** to wildlife re-identification:
 
-### 1. **Methodological Innovation** 🔬
+### 1. **Methodological Innovation** 
 - **First rigorous time-aware evaluation** for marine wildlife re-identification
 - **Eliminates identity leakage** present in 87% of existing literature
 - Demonstrates 15-25× performance inflation in studies using random splitting
 
-### 2. **Comprehensive Architectural Analysis** 🏗️
+### 2. **Comprehensive Architectural Analysis** 
 - Systematic comparison of ResNet-18, ResNet-50, and OSNet
 - ResNet-50: **2.45% Rank-1** | **13.83% Rank-10** | 7.4× improvement over random baseline
 - Statistical validation via McNemar's tests (χ² = 47.3, p < 0.001)
 
-### 3. **Biological Validation Framework** 🔍
+### 3. **Biological Validation Framework** 
 - **71% expert agreement** with model attention patterns
 - Grad-CAM analysis shows **67% central facial attention**, **45% focus on discriminative scutes**
 - IoU = 0.72 with expert-annotated biological features
 
-### 4. **Production-Ready System** ⚡
+### 4. **Production-Ready System** 
 - Real-time inference: **15.3ms per query**
 - 100% query coverage (1388/1388)
 - Complete open-source framework for conservation deployment
@@ -459,7 +459,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 📚 Citation
+##  Citation
 
 If you use this work in your research, please cite:
 
@@ -490,7 +490,7 @@ If you use this work in your research, please cite:
 
 ---
 
-## 🔗 Related Resources
+## Related Resources
 
 - **Dataset**: [SeaTurtleID2022](https://wildlife-datasets.github.io/SeaTurtleID2022/)
 - **Toolkit**: [WildlifeDatasets](https://github.com/WildlifeDatasets/wildlife-datasets)
@@ -499,7 +499,7 @@ If you use this work in your research, please cite:
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Sushmitha Shivashankar Singh**  
 MSc Data Analytics, Queen Mary University of London  
