@@ -301,7 +301,7 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ---
 
-## 📊 Detailed Results
+## Detailed Results
 
 <details>
 <summary>Performance Breakdown by Rank</summary>
@@ -338,7 +338,7 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ---
 
-## 🌍 Conservation Impact
+##  Conservation Impact
 
 ### Immediate Applications (Available Now)
 
