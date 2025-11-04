@@ -1,7 +1,4 @@
-# sea-turtle-reid
-Advanced Deep Learning for Sea Turtle Re-Identification with Temporal-Aware Evaluation
-
-# Advanced Deep Learning for Sea Turtle Re-Identification
+# 🐢 Advanced Deep Learning for Sea Turtle Re-Identification
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -9,39 +6,39 @@ Advanced Deep Learning for Sea Turtle Re-Identification with Temporal-Aware Eval
 [![Paper](https://img.shields.io/badge/paper-MSc%20Dissertation-brightgreen.svg)](docs/dissertation.pdf)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-> Rigorous methodology for automated individual identification of sea turtles using deep learning, addressing critical evaluation biases in wildlife re-identification research.
+> **Rigorous methodology for automated individual identification of sea turtles using deep learning, addressing critical evaluation biases in wildlife re-identification research.**
 
 <div align="center">
   <img src="results/figures/seaturtleid2022_dataset_summary.png" alt="Dataset Overview" width="700"/>
 </div>
 
-##  Key Contributions
+## 🎯 Key Contributions
 
 This research makes **four critical contributions** to wildlife re-identification:
 
-### 1. **Methodological Innovation** 
+### 1. **Methodological Innovation** 🔬
 - **First rigorous time-aware evaluation** for marine wildlife re-identification
 - **Eliminates identity leakage** present in 87% of existing literature
 - Demonstrates 15-25× performance inflation in studies using random splitting
 
-### 2. **Comprehensive Architectural Analysis**
+### 2. **Comprehensive Architectural Analysis** 🏗️
 - Systematic comparison of ResNet-18, ResNet-50, and OSNet
 - ResNet-50: **2.45% Rank-1** | **13.83% Rank-10** | 7.4× improvement over random baseline
 - Statistical validation via McNemar's tests (χ² = 47.3, p < 0.001)
 
-### 3. **Biological Validation Framework** 
+### 3. **Biological Validation Framework** 🔍
 - **71% expert agreement** with model attention patterns
 - Grad-CAM analysis shows **67% central facial attention**, **45% focus on discriminative scutes**
 - IoU = 0.72 with expert-annotated biological features
 
-### 4. **Production-Ready System** 
+### 4. **Production-Ready System** ⚡
 - Real-time inference: **15.3ms per query**
 - 100% query coverage (1388/1388)
 - Complete open-source framework for conservation deployment
 
 ---
 
-##  Performance Highlights
+## 📊 Performance Highlights
 
 | Architecture | Parameters | Rank-1 | Rank-5 | Rank-10 | Rank-20 | mAP | Training Time |
 |-------------|-----------|--------|--------|---------|---------|------|--------------|
@@ -51,7 +48,7 @@ This research makes **four critical contributions** to wildlife re-identificatio
 | *Random Baseline* | - | *0.33%* | *1.67%* | *3.34%* | *6.69%* | *0.005* | - |
 
 <details>
-<summary> View Performance Visualizations</summary>
+<summary>📈 View Performance Visualizations</summary>
 
 <div align="center">
   <img src="results/figures/cmc_curves_comparison.png" alt="CMC Curves" width="600"/>
@@ -65,13 +62,13 @@ This research makes **four critical contributions** to wildlife re-identificatio
 
 ---
 
-## The Identity Leakage Problem
+## 🔬 The Identity Leakage Problem
 
 **Critical Discovery**: 87% of wildlife re-identification studies suffer from systematic evaluation bias.
 
 ### The Problem
 ```python
-# WRONG: Random image splitting (identity leakage)
+# ❌ WRONG: Random image splitting (identity leakage)
 train_images, test_images = random_split(all_images)
 # Same individual appears in both train and test!
 # Creates 15-25× artificial performance inflation
@@ -79,7 +76,7 @@ train_images, test_images = random_split(all_images)
 
 ### Our Solution
 ```python
-# CORRECT: Time-aware individual-level splitting
+# ✅ CORRECT: Time-aware individual-level splitting
 from src.data.temporal_split import create_temporal_splits
 
 splits = create_temporal_splits(
@@ -95,7 +92,7 @@ splits = create_temporal_splits(
 
 ---
 
-## Interpretability: Learning Biologically Meaningful Features
+## 🧠 Interpretability: Learning Biologically Meaningful Features
 
 <div align="center">
   <img src="results/figures/resnet50_gradcam_visualisation.png" alt="Grad-CAM Visualization" width="700"/>
@@ -115,7 +112,7 @@ splits = create_temporal_splits(
 
 ---
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### Installation
 
@@ -228,7 +225,7 @@ attention_map = visualize_attention(
 
 ---
 
-##  Methodology
+## 📖 Methodology
 
 ### Time-Aware Evaluation Protocol
 
@@ -261,30 +258,30 @@ All architectural comparisons validated through:
 
 ---
 
-##  Key Findings
+## 🔍 Key Findings
 
 ### 1. Current Capabilities
 
-Pre-screening applications: 60-80% reduction in manual workload  
-High-confidence detection**: 76% reliability for top 5% predictions  
-Real-time processing**: 15.3ms per query enables practical deployment  
-Biological validity**: Models learn expert-aligned identification strategies  
+✅ **Pre-screening applications**: 60-80% reduction in manual workload  
+✅ **High-confidence detection**: 76% reliability for top 5% predictions  
+✅ **Real-time processing**: 15.3ms per query enables practical deployment  
+✅ **Biological validity**: Models learn expert-aligned identification strategies  
 
 ### 2. Architectural Insights
 
-**ResNet-50**  Recommended for accuracy-critical applications
+**ResNet-50** ⭐ Recommended for accuracy-critical applications
 - Highest Rank-1 accuracy (2.45%)
 - Best mAP score (0.0276)
 - Superior feature representation (2048-dim embeddings)
 - Training time: 47 minutes
 
-**ResNet-18**  Recommended for efficient deployment
+**ResNet-18** ⚡ Recommended for efficient deployment
 - Best Rank-20 performance (22.19%)
 - 38% faster training than ResNet-50
 - Good balance of accuracy and efficiency
 - Training time: 29 minutes
 
-**OSNet** Recommended for resource-constrained scenarios
+**OSNet** 💡 Recommended for resource-constrained scenarios
 - 91% parameter reduction vs ResNet-50
 - Highest biological attention IoU (0.72)
 - Fastest training and inference
@@ -301,7 +298,7 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ---
 
-## Detailed Results
+## 📊 Detailed Results
 
 <details>
 <summary>Performance Breakdown by Rank</summary>
@@ -338,7 +335,7 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ---
 
-##  Conservation Impact
+## 🌍 Conservation Impact
 
 ### Immediate Applications (Available Now)
 
@@ -359,24 +356,24 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ### Long-term Potential
 
- **Population Research**
+📊 **Population Research**
 - Habitat use analysis across environmental changes
 - Reproductive success tracking
 - Survival rate estimation improvements
 
- **Global Integration**
+🌐 **Global Integration**
 - Cross-institutional individual tracking
 - Standardized identification protocols
 - Worldwide population connectivity assessment
 
- **Technology Evolution**
+🤖 **Technology Evolution**
 - Integration with camera trap networks
 - Citizen science platform automation
 - Multi-modal data fusion (GPS, acoustic, environmental)
 
 ---
 
-##  Documentation
+## 📚 Documentation
 
 - [**Installation Guide**](docs/INSTALLATION.md) - Detailed setup instructions
 - [**Methodology**](docs/METHODOLOGY.md) - Complete evaluation protocol
@@ -387,7 +384,7 @@ Biological validity**: Models learn expert-aligned identification strategies
 
 ---
 
-## Running Tests
+## 🧪 Running Tests
 
 ```bash
 # Run all tests
@@ -407,7 +404,7 @@ pytest tests/integration/
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Areas where help would be particularly valuable:
 
@@ -427,42 +424,42 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 # Install development dependencies
 pip install -e ".[dev]"
 
-#Run pre-commit hooks
+# Run pre-commit hooks
 pre-commit install
 
-#Format code
+# Format code
 black src/ tests/
 isort src/ tests/
 
-#Type checking
+# Type checking
 mypy src/
 
-#Linting
+# Linting
 flake8 src/ tests/
 pylint src/
 ```
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- Supervisor: Dr. Omer Bobrowski, Queen Mary University of London
-- Institution: School of Mathematical Sciences, Queen Mary University of London
-- Dataset: SeaTurtleID2022 team for comprehensive marine wildlife data
--Frameworks: 
+- **Supervisor**: Dr. Omer Bobrowski, Queen Mary University of London
+- **Institution**: School of Mathematical Sciences, Queen Mary University of London
+- **Dataset**: SeaTurtleID2022 team for comprehensive marine wildlife data
+- **Frameworks**: 
   - [TorchReID](https://github.com/KaiyangZhou/deep-person-reid) - Person re-identification framework
   - [WildlifeDatasets](https://github.com/WildlifeDatasets/wildlife-datasets) - Wildlife dataset toolkit
-- Community: Open-source research community enabling this work
+- **Community**: Open-source research community enabling this work
 
 ---
 
-## Citation
+## 📚 Citation
 
 If you use this work in your research, please cite:
 
@@ -493,30 +490,31 @@ If you use this work in your research, please cite:
 
 ---
 
-##  Related Resources
+## 🔗 Related Resources
 
-- Dataset: [SeaTurtleID2022](https://wildlife-datasets.github.io/SeaTurtleID2022/)
-- Toolkit: [WildlifeDatasets](https://github.com/WildlifeDatasets/wildlife-datasets)
-- Framework: [TorchReID](https://github.com/KaiyangZhou/deep-person-reid)
-- Research Group: [Wildlife ML Research](https://wildlifedatasets.github.io/)
+- **Dataset**: [SeaTurtleID2022](https://wildlife-datasets.github.io/SeaTurtleID2022/)
+- **Toolkit**: [WildlifeDatasets](https://github.com/WildlifeDatasets/wildlife-datasets)
+- **Framework**: [TorchReID](https://github.com/KaiyangZhou/deep-person-reid)
+- **Research Group**: [Wildlife ML Research](https://wildlifedatasets.github.io/)
 
 ---
 
-## Contact
+## 📞 Contact
 
 **Sushmitha Shivashankar Singh**  
 MSc Data Analytics, Queen Mary University of London  
 Student ID: 241040522
 
-- Email: [sushmita.s.0721@gmail.com](mailto:sushmita.s.0721@gmail.com)
-- GitHub: [@Sushmitha0721](https://github.com/Sushmitha2701/)
-- LinkedIn: [sushmita-singh-21s7](https://www.linkedin.com/in/sushmita-singh-21s7/)
+- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
+- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- 🌐 Website: [Your Portfolio](https://yourwebsite.com)
 
 For research inquiries or collaboration opportunities, please reach out via email.
 
 ---
 
-## Star History
+## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yourusername/sea-turtle-reid&type=Date)](https://star-history.com/#yourusername/sea-turtle-reid&Date)
 
@@ -524,11 +522,10 @@ For research inquiries or collaboration opportunities, please reach out via emai
 
 <div align="center">
 
-**Made with for marine conservation**
+**Made with 🐢 for marine conservation**
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/sea-turtle-reid?style=social)](https://github.com/yourusername/sea-turtle-reid)
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/sea-turtle-reid?style=social)](https://github.com/yourusername/sea-turtle-reid)
 [![GitHub watchers](https://img.shields.io/github/watchers/yourusername/sea-turtle-reid?style=social)](https://github.com/yourusername/sea-turtle-reid)
 
 </div>
-
