@@ -1,4 +1,4 @@
-# 🐢 Advanced Deep Learning for Sea Turtle Re-Identification
+# Advanced Deep Learning for Sea Turtle Re-Identification
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -12,7 +12,7 @@
   <img src="results/figures/seaturtleid2022_dataset_summary.png" alt="Dataset Overview" width="700"/>
 </div>
 
-## 🎯 Key Contributions
+## Key Contributions
 
 This research makes **four critical contributions** to wildlife re-identification:
 
@@ -38,7 +38,7 @@ This research makes **four critical contributions** to wildlife re-identificatio
 
 ---
 
-## 📊 Performance Highlights
+## Performance Highlights
 
 | Architecture | Parameters | Rank-1 | Rank-5 | Rank-10 | Rank-20 | mAP | Training Time |
 |-------------|-----------|--------|--------|---------|---------|------|--------------|
@@ -62,13 +62,13 @@ This research makes **four critical contributions** to wildlife re-identificatio
 
 ---
 
-## 🔬 The Identity Leakage Problem
+## The Identity Leakage Problem
 
 **Critical Discovery**: 87% of wildlife re-identification studies suffer from systematic evaluation bias.
 
 ### The Problem
 ```python
-# ❌ WRONG: Random image splitting (identity leakage)
+#  WRONG: Random image splitting (identity leakage)
 train_images, test_images = random_split(all_images)
 # Same individual appears in both train and test!
 # Creates 15-25× artificial performance inflation
@@ -76,7 +76,7 @@ train_images, test_images = random_split(all_images)
 
 ### Our Solution
 ```python
-# ✅ CORRECT: Time-aware individual-level splitting
+# CORRECT: Time-aware individual-level splitting
 from src.data.temporal_split import create_temporal_splits
 
 splits = create_temporal_splits(
@@ -92,7 +92,7 @@ splits = create_temporal_splits(
 
 ---
 
-## 🧠 Interpretability: Learning Biologically Meaningful Features
+## Interpretability: Learning Biologically Meaningful Features
 
 <div align="center">
   <img src="results/figures/resnet50_gradcam_visualisation.png" alt="Grad-CAM Visualization" width="700"/>
@@ -112,7 +112,7 @@ splits = create_temporal_splits(
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -225,7 +225,7 @@ attention_map = visualize_attention(
 
 ---
 
-## 📖 Methodology
+## Methodology
 
 ### Time-Aware Evaluation Protocol
 
@@ -258,18 +258,18 @@ All architectural comparisons validated through:
 
 ---
 
-## 🔍 Key Findings
+##  Key Findings
 
 ### 1. Current Capabilities
 
-✅ **Pre-screening applications**: 60-80% reduction in manual workload  
-✅ **High-confidence detection**: 76% reliability for top 5% predictions  
-✅ **Real-time processing**: 15.3ms per query enables practical deployment  
-✅ **Biological validity**: Models learn expert-aligned identification strategies  
+**Pre-screening applications**: 60-80% reduction in manual workload  
+**High-confidence detection**: 76% reliability for top 5% predictions  
+**Real-time processing**: 15.3ms per query enables practical deployment  
+**Biological validity**: Models learn expert-aligned identification strategies  
 
 ### 2. Architectural Insights
 
-**ResNet-50** ⭐ Recommended for accuracy-critical applications
+**ResNet-50** Recommended for accuracy-critical applications
 - Highest Rank-1 accuracy (2.45%)
 - Best mAP score (0.0276)
 - Superior feature representation (2048-dim embeddings)
@@ -281,7 +281,7 @@ All architectural comparisons validated through:
 - Good balance of accuracy and efficiency
 - Training time: 29 minutes
 
-**OSNet** 💡 Recommended for resource-constrained scenarios
+**OSNet**  Recommended for resource-constrained scenarios
 - 91% parameter reduction vs ResNet-50
 - Highest biological attention IoU (0.72)
 - Fastest training and inference
@@ -298,7 +298,7 @@ All architectural comparisons validated through:
 
 ---
 
-## 📊 Detailed Results
+## Detailed Results
 
 <details>
 <summary>Performance Breakdown by Rank</summary>
@@ -335,7 +335,7 @@ All architectural comparisons validated through:
 
 ---
 
-## 🌍 Conservation Impact
+##  Conservation Impact
 
 ### Immediate Applications (Available Now)
 
@@ -356,24 +356,24 @@ All architectural comparisons validated through:
 
 ### Long-term Potential
 
-📊 **Population Research**
+ **Population Research**
 - Habitat use analysis across environmental changes
 - Reproductive success tracking
 - Survival rate estimation improvements
 
-🌐 **Global Integration**
+**Global Integration**
 - Cross-institutional individual tracking
 - Standardized identification protocols
 - Worldwide population connectivity assessment
 
-🤖 **Technology Evolution**
+ **Technology Evolution**
 - Integration with camera trap networks
 - Citizen science platform automation
 - Multi-modal data fusion (GPS, acoustic, environmental)
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - [**Installation Guide**](docs/INSTALLATION.md) - Detailed setup instructions
 - [**Methodology**](docs/METHODOLOGY.md) - Complete evaluation protocol
@@ -384,7 +384,7 @@ All architectural comparisons validated through:
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 # Run all tests
@@ -404,7 +404,7 @@ pytest tests/integration/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Areas where help would be particularly valuable:
 
@@ -441,13 +441,13 @@ pylint src/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Supervisor**: Dr. Omer Bobrowski, Queen Mary University of London
 - **Institution**: School of Mathematical Sciences, Queen Mary University of London
@@ -505,16 +505,16 @@ If you use this work in your research, please cite:
 MSc Data Analytics, Queen Mary University of London  
 Student ID: 241040522
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 🌐 Website: [Your Portfolio](https://yourwebsite.com)
+-  Email: [sushmita.s.0721@gmail.com](sushmita.s.0721@gmail.com)
+- GitHub: [@Sushmitha/0721](https://github.com/Sushmitha2701/)
+- LinkedIn: [sushmita-singh-21s7/](https://www.linkedin.com/in/sushmita-singh-21s7/)
+
 
 For research inquiries or collaboration opportunities, please reach out via email.
 
 ---
 
-## ⭐ Star History
+## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yourusername/sea-turtle-reid&type=Date)](https://star-history.com/#yourusername/sea-turtle-reid&Date)
 
@@ -522,7 +522,7 @@ For research inquiries or collaboration opportunities, please reach out via emai
 
 <div align="center">
 
-**Made with 🐢 for marine conservation**
+**Made with  for marine conservation**
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/sea-turtle-reid?style=social)](https://github.com/yourusername/sea-turtle-reid)
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/sea-turtle-reid?style=social)](https://github.com/yourusername/sea-turtle-reid)
